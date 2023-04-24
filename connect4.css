@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 50%;
+  margin: 3em auto;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: animate 100s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-color: #3bbb70;
+  }
+  50% {
+    background-color: #3f78bd;
+  }
+  100% {
+    background-color: #50c14e;
+  }
+}
+
+#game{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#players div {
+  margin: 0.5em;
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 1em;
+}
